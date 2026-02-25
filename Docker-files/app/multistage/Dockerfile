@@ -1,4 +1,4 @@
-FROM maven:3.9.9-eclipse-temurin-17-jammy AS build_image
+FROM maven:3.9.6-eclipse-temurin-17 AS build_image
 RUN git clone https://github.com/hkhcoder/vprofile-project.git
 WORKDIR /vprofile-project
 RUN git checkout docker
